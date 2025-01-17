@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="loadSpecificReceipe()">
+    <script>
+        async function loadSpecificReceipe()
+         {
+
+            var windows=new URLSearchParams(window.location.search)
+
+            var id=windows.get('id');
+
+            console.log(id)
+            
+        }
+    </script>
+</body>
+</html>
